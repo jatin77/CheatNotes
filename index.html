@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,72 +8,83 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <title>Cheat Notes | Home</title>
 </head>
+
 <body>
-  <div class="container">
-  <a href="gallery.html">Gallery</a>
-  <header>
-    <h1 class="text-center">CHEAT NOTES</h1>
-  </header>
-  <form class="form-group">
-    <input type="text" class="form-control mt-5" placeholder="Search By Semester">
-  </form>
-  <nav>
-    <ul class="main-ul">
-    <li class="stream"><a href="#">B.Sc.,Information Tecxhnology</a>
-      <ul>
-        <li class="sem">Semester
-          <ul>
-            <li class="subject">Subject
-              <ul>
-                <li class="dcn">Digital Communication Network
-                    <ul>
-                        <li class="dcnUnits">Units
-                          <ul>
-                            <li>Unit1</li>
-                            <li>Unit2</li>
-                            <li>Unit3</li>
-                            <li>Unit4</li>
-                          </ul>
-                        </li>
+  <div class="container mt-2">
+ 
+    <header>
+      <h1 class="text-center">CHEAT NOTES</h1>
+    </header>
+    <form class="form-group">
+      <input type="text" class="form-control mt-5" placeholder="Search By Semester">
+    </form>
+    <div class="nav2">
+      <div class="trade">
+        <div class="dropDown">
+            <button class="drop">+</button>
+          <p>B.Sc Information Technology</p>
+        </div>
+        <div>
+          <ul class="showTrade">
+            <li>
+              <div class="dropDown">
+                  <button class="drop">+</button>
+                <p>Semester IV</p>
+              </div>
+              <div>
+                <ul class="showTrade">
+                  <li>
+                    <div class="dropDown">
+                        <button class="drop">+</button>
+                      <p>Operating System</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="#">Unit 1</a></li>
+                        <li><a href="#">Unit 2</a></li>
+                        <li><a href="#">Unit 3</a></li>
                       </ul>
-                </li>
-                <li class="os">Operating System
-                    <ul>
-                        <li class="osUnits">Units
-                          <ul>
-                            <li>Unit1</li>
-                            <li>Unit2</li>
-                            <li>Unit3</li>
-                            <li>Unit4</li>
-                          </ul>
-                        </li>
-                      </ul>
-                </li>
-                <li class="gt">Graph Theory
-                    <ul>
-                        <li class="gtUnits">Units
-                          <ul>
-                            <li>Unit1</li>
-                            <li>Unit2</li>
-                            <li>Unit3</li>
-                            <li>Unit4</li>
-                          </ul>
-                        </li>
-                      </ul>
-                </li>
-              </ul>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="dropDown">
+                          <button class="drop">+</button>
+                        <p>Digital Communication Network</p>
+                      </div>
+                      <div>
+                        <ul class="showTrade">
+                          <li><a href="#">Unit 1</a></li>
+                          <li><a href="#">Unit 2</a></li>
+                          <li><a href="#">Unit 3</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+              </div>
+            </li>
+            
             </li>
           </ul>
-        </li>
-      </ul>
-    </li>
-    </ul>
-  </nav>
- 
+        </div>
+      </div>
+
+    </div>
   </div>
+  <script>
+    let btn = document.querySelectorAll("button");
+    btn.forEach((btns) => btns.addEventListener("click", showHide1));
+
+    function showHide1(e) {
+      let list = e.target.parentElement.nextElementSibling.querySelector("ul");
+      e.target.classList.toggle("crimson")
+      list.classList.toggle("show1");
+      console.log(list)
+    }
+  </script>
 </body>
+
 </html>
