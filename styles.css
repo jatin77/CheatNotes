@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  background: #000;
+  font-family: 'Bungee Inline', cursive;
+}
+
+/*Universal*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #eeeeee;
+  cursor:pointer;
+}
+
+a:focus {
+  text-decoration: none !important;
+  color: #eeeeee;
+}
+a:hover{
+  color: #f8f8ff;
+}
+
+/**/
+
+header{
+  text-align: center;
+  width:100%;
+}
+header h1{
+  padding:0;
+  margin:0;
+}
+/*Gallery*/
+
+.gallery-container {
+  max-width: 760px;
+  margin: auto;
+  padding: 10px;
+
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .5s ease-in forwards;
+}
+
+/*NAVIGATION*/
+nav{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  margin-top:30px;
+  color: #f8f8ff;
+  height:50px;
+  line-height: 50px;
+}
+nav .home{
+  font-size:35px;
+}
+nav .left{
+  font-size:25px;
+  margin-right:15px;
+}
+nav .right{
+  font-size:25px;
+  margin-left:15px;
+}
