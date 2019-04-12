@@ -11,7 +11,7 @@ ul {
 
 a {
   text-decoration: none !important;
-
+  cursor:pointer;
 }
 
 a:focus {
@@ -64,35 +64,4 @@ a:focus {
   background: url(iconfinder_ic_add_circle_48px_352005.png);
   background-size: cover;
   background-position: center;
-}
-
-/*Gallery*/
-
-.gallery-container {
-  max-width: 760px;
-  margin: auto;
-  padding: 10px;
-
-}
-
-.main-img img,
-.imgs img {
-  width: 100%;
-}
-
-.imgs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn .5s ease-in forwards;
 }
