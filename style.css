@@ -1,56 +1,78 @@
 body {
   padding: 0;
-  margin: 20px;
-  background: #000;
+  background: #EEEEEE;
+  font-family: 'Bungee Inline', cursive;
 }
+
 /*Universal*/
-ul{
+ul {
   list-style: none;
 }
-a{
-  text-decoration:none !important;
-  
+
+a {
+  text-decoration: none !important;
+
 }
-a:focus{
+
+a:focus {
   text-decoration: none !important;
 }
 
 /*DROPDOWNMENU*/
 
-.show1.showTrade{
+.show1.showTrade {
   display: block;
 }
-.showTrade{
+
+.showTrade {
   display: none;
 }
-
-
-.crimson.drop{
-  background: crimson !important;
+.showTrade li a{
+  color: #333;
+  text-decoration:none;
+  font-size: 14px;
 }
-.dropDown{
-  width:100%;
+.showTrade li a:hover{
+  color: #1a1a1a;
+}
+
+.crimson.drop {
+  background: url(iconfinder_minus_2639865.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.dropDown {
+  width: 100%;
   display: grid;
   grid-template-columns: 40px auto;
 }
-.dropDown p{
+
+.dropDown p {
   line-height: 30px;
 }
-.dropDown button{
-  height:30px;
-  width:30px;
+
+.dropDown button {
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  outline: none;
+  color: #f8f8ff;
+  background: url(iconfinder_ic_add_circle_48px_352005.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /*Gallery*/
 
-.container {
+.gallery-container {
   max-width: 760px;
   margin: auto;
+  padding: 10px;
 
- 
 }
 
 .main-img img,
@@ -63,13 +85,14 @@ a:focus{
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
 }
-@keyframes fadeIn{
-  to{
-    opacity:1;
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
-.fade-in{
+.fade-in {
   opacity: 0;
-  animation :fadeIn .5s ease-in forwards;
+  animation: fadeIn .5s ease-in forwards;
 }
