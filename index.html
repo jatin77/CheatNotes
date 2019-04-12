@@ -18,11 +18,12 @@
 <body>
   <div class="container">
 
-    <header>
-      <h1 class="text-center mt-3 mb-3">CHEAT NOTES</h1>
+    <header >
+      <h1 class="text-center mt-3 mb-4">CHEAT NOTES</h1>
+    
     </header>
     <hr>
-    <div class="nav mt-4">
+    <div class="nav mt-5">
       <div class="trade">
         <div class="dropDown">
           <button class="drop"></button>
@@ -104,19 +105,24 @@
 
     </div>
   </div>
+
   <script>
     //Grab Element
     let btn = document.querySelectorAll("button");
 
     //Event
     btn.forEach((btns) => btns.addEventListener("click", showHide1));
-
+    
     //function
     function showHide1(e) {
       let list = e.target.parentElement.nextElementSibling.querySelector("ul");
       e.target.classList.toggle("crimson")
       list.classList.toggle("show1");
     }
+
+  
+      alert("Keep It Away From Teaher's")
+ 
   </script>
 </body>
 
