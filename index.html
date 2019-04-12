@@ -10,37 +10,67 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
   <title>Cheat Notes | Home</title>
 </head>
 
 <body>
-  <div class="container mt-2">
- 
+  <div class="container">
+
     <header>
-      <h1 class="text-center">CHEAT NOTES</h1>
+      <h1 class="text-center mt-3 mb-3">CHEAT NOTES</h1>
     </header>
-    <form class="form-group">
-      <input type="text" class="form-control mt-5" placeholder="Search By Semester">
-    </form>
-    <div class="nav2">
+    <hr>
+    <div class="nav mt-4">
       <div class="trade">
         <div class="dropDown">
-            <button class="drop">+</button>
+          <button class="drop"></button>
           <p>B.Sc Information Technology</p>
         </div>
         <div>
           <ul class="showTrade">
             <li>
               <div class="dropDown">
-                  <button class="drop">+</button>
+                <button class="drop"></button>
                 <p>Semester IV</p>
               </div>
               <div>
                 <ul class="showTrade">
                   <li>
                     <div class="dropDown">
-                        <button class="drop">+</button>
+                      <button class="drop"></button>
                       <p>Operating System</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">Process Management</a></li>
+                        <li><a href="#">Memory Management</a></li>
+                        <li><a href="#">Concurrent Processes</a></li>
+                        <li><a href="#">File & Secondary Management</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>Data Communication & Network</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="DCN1.html">Introductory Concepts</a></li>
+                        <li><a href="DCN2.html">Medium Access Sub-layer</a></li>
+                        <li><a href="DCN3.html">Network Layer</a></li>
+                        <li><a href="DCN4.html">Transport Layer</a></li>
+                        <li><a href="DCN5.html">Application Layer</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>ManageMent Information System</p>
                     </div>
                     <div>
                       <ul class="showTrade">
@@ -51,22 +81,22 @@
                     </div>
                   </li>
                   <li>
-                      <div class="dropDown">
-                          <button class="drop">+</button>
-                        <p>Digital Communication Network</p>
-                      </div>
-                      <div>
-                        <ul class="showTrade">
-                          <li><a href="#">Unit 1</a></li>
-                          <li><a href="#">Unit 2</a></li>
-                          <li><a href="#">Unit 3</a></li>
-                        </ul>
-                      </div>
-                    </li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>Graph Theory</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="#">Unit 1</a></li>
+                        <li><a href="#">Unit 2</a></li>
+                        <li><a href="#">Unit 3</a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </li>
-            
+
             </li>
           </ul>
         </div>
@@ -75,14 +105,17 @@
     </div>
   </div>
   <script>
+    //Grab Element
     let btn = document.querySelectorAll("button");
+
+    //Event
     btn.forEach((btns) => btns.addEventListener("click", showHide1));
 
+    //function
     function showHide1(e) {
       let list = e.target.parentElement.nextElementSibling.querySelector("ul");
       e.target.classList.toggle("crimson")
       list.classList.toggle("show1");
-      console.log(list)
     }
   </script>
 </body>
