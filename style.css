@@ -47,3 +47,9 @@ ul{
 .main-ul{
   position: relative;
 }
+.extra li{
+  display:none;
+}
+.extra:hover li{
+  display: block;
+}
