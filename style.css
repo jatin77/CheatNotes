@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+
 body {
   padding: 0;
   background: #EEEEEE;
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 110%;
 }
 
 /*Universal*/
@@ -11,12 +14,21 @@ ul {
 
 a {
   text-decoration: none !important;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 a:focus {
   text-decoration: none !important;
 }
+
+/*Header*/
+header h1 {
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+}
+
 
 /*DROPDOWNMENU*/
 
@@ -27,12 +39,14 @@ a:focus {
 .showTrade {
   display: none;
 }
-.showTrade li a{
+
+.showTrade li a {
   color: #333;
-  text-decoration:none;
+  text-decoration: none;
   font-size: 14px;
 }
-.showTrade li a:hover{
+
+.showTrade li a:hover {
   color: #1a1a1a;
 }
 
