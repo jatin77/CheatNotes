@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+
 body {
   padding: 0;
   background: #000;
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 110%;
 }
 
 /*Universal*/
@@ -12,27 +15,34 @@ ul {
 a {
   text-decoration: none !important;
   color: #eeeeee;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 a:focus {
   text-decoration: none !important;
   color: #eeeeee;
 }
-a:hover{
+
+a:hover {
   color: #f8f8ff;
 }
 
-/**/
+/*Header*/
 
-header{
+header {
   text-align: center;
-  width:100%;
+  width: 100%;
 }
-header h1{
-  padding:0;
-  margin:0;
+
+header h1 {
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
 }
+
+
+
 /*Gallery*/
 
 .gallery-container {
@@ -65,23 +75,26 @@ header h1{
 }
 
 /*NAVIGATION*/
-nav{
+nav {
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: center;
-  margin-top:30px;
+  margin-top: 30px;
   color: #f8f8ff;
-  height:50px;
+  height: 50px;
   line-height: 50px;
 }
-nav .home{
-  font-size:35px;
+
+nav .home {
+  font-size: 35px;
 }
-nav .left{
-  font-size:25px;
-  margin-right:15px;
+
+nav .left {
+  font-size: 25px;
+  margin-right: 15px;
 }
-nav .right{
-  font-size:25px;
-  margin-left:15px;
+
+nav .right {
+  font-size: 25px;
+  margin-left: 15px;
 }
