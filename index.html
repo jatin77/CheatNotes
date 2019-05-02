@@ -11,16 +11,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
   <title>Cheat Notes | Home</title>
 </head>
 
 <body>
   <div class="container">
 
-    <header >
+    <header>
       <h1 class="text-center mt-3 mb-4">CHEAT NOTES</h1>
-    
+
     </header>
     <hr>
     <div class="nav mt-5">
@@ -31,6 +30,7 @@
         </div>
         <div>
           <ul class="showTrade">
+            <!----------------Semester 4--------------------->
             <li>
               <div class="dropDown">
                 <button class="drop"></button>
@@ -45,11 +45,11 @@
                     </div>
                     <div>
                       <ul class="showTrade">
-                        <li><a href="#">Introduction</a></li>
-                        <li><a href="#">Process Management</a></li>
-                        <li><a href="#">Memory Management</a></li>
-                        <li><a href="#">Concurrent Processes</a></li>
-                        <li><a href="#">File & Secondary Management</a></li>
+                        <li><a href="OS1.html">Introduction</a></li>
+                        <li><a href="OS2.html">Process Management</a></li>
+                        <li><a href="OS3.html">Memory Management</a></li>
+                        <li><a href="OS4.html">Concurrent Processes</a></li>
+                        <li><a href="OS5.html">File & Secondary Management</a></li>
                       </ul>
                     </div>
                   </li>
@@ -75,9 +75,11 @@
                     </div>
                     <div>
                       <ul class="showTrade">
-                        <li><a href="#">Unit 1</a></li>
-                        <li><a href="#">Unit 2</a></li>
-                        <li><a href="#">Unit 3</a></li>
+                        <li><a href="MIS1.html">Unit 1</a></li>
+                        <li><a href="MIS2.html">Unit 2</a></li>
+                        <li><a href="MIS3.html">Unit 3</a></li>
+                        <li><a href="MIS4.html">Unit 4</a></li>
+                        <li><a href="MIS5.html">Unit 5</a></li>
                       </ul>
                     </div>
                   </li>
@@ -85,6 +87,81 @@
                     <div class="dropDown">
                       <button class="drop"></button>
                       <p>Graph Theory</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="GT1.html">Unit 1</a></li>
+                        <li><a href="GT2.html">Unit 2</a></li>
+                        <li><a href="GT3.html">Unit 3</a></li>
+                        <li><a href="GT4.html">Unit 4</a></li>
+                        <li><a href="GT5.html">Unit 5</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--------------------Semester 4 end--------------------->
+            <!--------------------Semester 2--------------------->
+            <li>
+              <div class="dropDown">
+                <button class="drop"></button>
+                <p>Semester II</p>
+              </div>
+              <div>
+                <ul class="showTrade">
+                  <li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>Data Structures</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="DS1.html">Introduction</a></li>
+                        <li><a href="DS2.html">Array</a></li>
+                        <li><a href="DS3.html">Stack</a></li>
+                        <li><a href="DS4.html">Queue</a></li>
+                        <li><a href="DS5.html">List</a></li>
+                        <li><a href="DS6.html">Tree</a></li>
+                        <li><a href="DS7.html">Sorting & Hashing</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>C++</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="#">Concepts of OOP</a></li>
+                        <li><a href="#">Constructor & Destructor</a></li>
+                        <li><a href="#">Functions</a></li>
+                        <li><a href="#">Polymorphism</a></li>
+                        <li><a href="#">Inheritence</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>Environmental Science</p>
+                    </div>
+                    <div>
+                      <ul class="showTrade">
+                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#">Solid Waste Management</a></li>
+                        <li><a href="#">Disaster</a></li>
+                        <li><a href="#">Sustainable Development</a></li>
+                        <li><a href="#">Biodiversity</a></li>
+                        <li><a href="#">Legislation & Montreal Protocol</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown">
+                      <button class="drop"></button>
+                      <p>System Analysis & Development</p>
                     </div>
                     <div>
                       <ul class="showTrade">
@@ -97,8 +174,7 @@
                 </ul>
               </div>
             </li>
-
-            </li>
+            <!---------------------Semester 2 end--------------->
           </ul>
         </div>
       </div>
@@ -106,23 +182,20 @@
     </div>
   </div>
 
+
   <script>
     //Grab Element
     let btn = document.querySelectorAll("button");
 
     //Event
     btn.forEach((btns) => btns.addEventListener("click", showHide1));
-    
+
     //function
     function showHide1(e) {
       let list = e.target.parentElement.nextElementSibling.querySelector("ul");
       e.target.classList.toggle("crimson")
       list.classList.toggle("show1");
     }
-
-  
-      alert("Keep It Away From Teaher's")
- 
   </script>
 </body>
 
