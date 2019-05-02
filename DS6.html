@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <title>Cheat Notes | DS-Unit6</title>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">CHEAT NOTES</a></h1>
+  </header>
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="main-img">
+        <img src="DSu7-1.jpg" id="current">
+      </div>
+      <div class="imgs">
+        <img src="DSu7-1.jpg">
+        <img src="DSu7-2.jpg">
+        <img src="DSu7-3.jpg">
+        <img src="DSu7-4.jpg">
+        <img src="DSu7-5.jpg">
+        <img src="DSu7-6.jpg">
+        <img src="DSu7-7.jpg">
+        <img src="DSu7-8.jpg">
+        <img src="DSu7-9.jpg">
+        <img src="DSu7-10.jpg">
+        <img src="DSu7-11.jpg">
+        <img src="DSu7-12.jpg">
+        <img src="DSu7-13.jpg">
+
+        <img src="DSu7-14.jpg">
+        <img src="DSu7-15.jpg">
+        <img src="DSu7-16.jpg">
+        <img src="DSu7-17.jpg">
+        <img src="DSu7-18.jpg">
+        <img src="DSu7-19.jpg">
+        <img src="DSu7-20.jpg">
+        <img src="DSu7-21.jpg">
+
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></div>
+    <div class="right"><a href="GT2.html"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+  </nav>
+  <script>
+    const currentImg = document.querySelector("#current");
+    const allImgs = document.querySelectorAll(".imgs img");
+
+    const opacity = .6;
+
+    allImgs[0].style.opacity = opacity;
+
+    allImgs.forEach(img => img.addEventListener("click", changeMainImg));
+
+    function changeMainImg(e) {
+      allImgs.forEach(img => img.style.opacity = 1);
+      currentImg.classList.add("fade-in");
+
+      currentImg.src = e.target.src;
+      //remove fadein
+      setTimeout(() => currentImg.classList.remove("fade-in"), 500)
+      e.target.style.opacity = opacity;
+    }
+  </script>
+</body>
+
+</html>
